@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader</title>
+    <style>
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 100%;
+        height: 8em;
+        width: 8em;
+      }
+
+      .container {
+        align-items: center;
+        background-color: white;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader" class="container">
+      <div class="loading">
+        <img src="Disk.gif" alt="Disk" width="150px"/>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
